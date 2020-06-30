@@ -9,5 +9,5 @@ script:
 deploy:
   skip_cleanup: true
   provider: firebase
-  token: 1//03kgZEFuGzLZlCgYIARAAGAMSNwF-L9IrZvIfveLigWQVu1So3u2Wt_GFK6VwS04QuhkjBFItriuzvSAGRshRuSAJcqcTAdn1Qek
-    secure: "encrypted_firebase_CI_token"
+  token: 
+    secure: "1//03kgZEFuGzLZlCgYIARAAGAMSNwF-L9IrZvIfveLigWQVu1So3u2Wt_GFK6VwS04QuhkjBFItriuzvSAGRshRuSAJcqcTAdn1Qek"
