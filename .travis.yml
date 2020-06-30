@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "11.0"
+branches:
+  only:
+    - master
+script:
+  -
+deploy:
+  skip_cleanup: true
+  provider: firebase
+  token: 1//03kgZEFuGzLZlCgYIARAAGAMSNwF-L9IrZvIfveLigWQVu1So3u2Wt_GFK6VwS04QuhkjBFItriuzvSAGRshRuSAJcqcTAdn1Qek
+    secure: ""
