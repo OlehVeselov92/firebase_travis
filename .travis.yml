@@ -5,13 +5,15 @@ node_js:
 branches:
   only:
     - master
+    before_script:
+    - npm install firebase-tools -g
 script:
   - echo "Deploying!"
 deploy:
   skip_cleanup: true
   provider: firebase
   token: 
-    secure: "1//03kgZEFuGzLZlCgYIARAAGAMSNwF-L9IrZvIfveLigWQVu1So3u2Wt_GFK6VwS04QuhkjBFItriuzvSAGRshRuSAJcqcTAdn1Qek"
+    secure: "1//03qDuEN_F2g8iCgYIARAAGAMSNwF-L9IrFJCfbwhV76he1Hpz7sWUcaqPHG0q9RDpuepJnqn7Qk5T8_v-bpOsMio0r7Oq4WGPd9k"
   project: "questions-veselov"
   after_success:
   - firebase deploy --token $FIREBASE_TOKEN --non-interactive
