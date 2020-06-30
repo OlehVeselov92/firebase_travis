@@ -1,11 +1,12 @@
 language: node_js
+sudo: required
 node_js:
   - "11.0"
 branches:
   only:
     - master
 script:
-  -
+  - npm test
 deploy:
   skip_cleanup: true
   provider: firebase
@@ -13,3 +14,4 @@ deploy:
     secure: "1//03kgZEFuGzLZlCgYIARAAGAMSNwF-L9IrZvIfveLigWQVu1So3u2Wt_GFK6VwS04QuhkjBFItriuzvSAGRshRuSAJcqcTAdn1Qek"
 
   project: "questions-veselov"
+  
