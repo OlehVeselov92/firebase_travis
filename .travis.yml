@@ -13,4 +13,6 @@ deploy:
   token: 
     secure: "1//03kgZEFuGzLZlCgYIARAAGAMSNwF-L9IrZvIfveLigWQVu1So3u2Wt_GFK6VwS04QuhkjBFItriuzvSAGRshRuSAJcqcTAdn1Qek"
   project: "questions-veselov"
+  after_success:
+  - firebase deploy --token $FIREBASE_TOKEN --non-interactive
   
